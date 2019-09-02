@@ -11,7 +11,7 @@ async function fetchInfoBoxes (query) {
 
 async function extractFetch (hits) {
   if (hits.length === 0) {
-    return Promise.resolve([])
+    return Promise.resolve({})
   }
   const result = await fetchInfoBoxes(hits[0].title)
   return result
@@ -19,7 +19,7 @@ async function extractFetch (hits) {
 
 async function fetchSearchInfoBoxes (query) {
   const res = await wikifetch(wikiSearchUrl, query)
-  const results = await extractFetch(res.query.search)
+  const results = await extractFetch(res.query.search || [])
   return results
 }
 
