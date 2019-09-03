@@ -19,8 +19,6 @@ This module Extract those wikipedia articles infoboxes in a structured JSON form
 }
 ```
 
-The module only has an external node-fetch dependency to query the wikimedia APIs and Jest as dev dependency to run the tests.
-
 ## Install
 
 You can install with [npm]:
@@ -31,7 +29,7 @@ $ npm install --save wiki-infoboxes
 
 ## Usage
 
-The module provides two main functions: `fetchInfoBoxes` and `fetchSearchInfoBoxes`. You can use the first one if you know the exact wikipedia page title and latter if you don't know it and want to search for it, but both are used in similar fashion:
+The module provides two main functions: `fetchInfoBoxes` and `fetchSearchInfoBoxes`. You can use the first one if you know the exact wikipedia page title and latter if you don't know the exact title and want tor search for it. Both are used in similar fashion:
 
 ```js
 > const { fetchInfoBoxes, fetchSearchInfoBoxes,  } = require('wiki-infoboxes')
