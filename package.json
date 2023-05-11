@@ -23,6 +23,6 @@
   "homepage": "https://github.com/webdacjs/wiki-infoboxes#readme",
   "dependencies": {
     "simple-fetch-cache": "1.4.1",
-    "wtf_wikipedia": "7.7.1"
+    "wtf_wikipedia": "10.1.4"
   }
 }
